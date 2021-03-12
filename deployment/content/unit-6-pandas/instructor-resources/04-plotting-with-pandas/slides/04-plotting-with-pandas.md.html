@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title></title>
+
+<meta name="description" content="">
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="../../../../lib/css/zenburn.css">
+<link rel="stylesheet" href="../../../../lib/css/prism.css">
+
+<link rel="stylesheet" href="../../../../css/reveal.css">
+<link rel="stylesheet" href="../../../../css/theme/ga-title.css" id="theme">
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/python-ga/proxima-nova/fonts.css" />
+
+</head>
+
+<body class="language-javascript">
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+
+<!--
+---
+title: Plotting with Pandas
+type: lesson
+duration: "1:00"
+---
+-->
+<section id="section" class="level2 separator">
+<h2><img src="http://nagale.com/ga-python/images/GA_Cog_Medium_White_RGB.png" /></h2>
+<h1>
+Plotting with Pandas
+</h1>
+<!--
+
+## Overview
+This lesson covers plotting with pandas, which serves as a wrapper for matplotlib.
+
+## Learning Objectives
+In this lesson, students will:
+- Use pandas to plot from three different datasets
+
+## Duration
+60 minutes
+
+## Suggested Agenda
+
+| Time | Activity |
+| --- | --- |
+
+## Suggested Agenda
+
+|    Time     | Activity | Purpose |
+|-------------|----------|---------|
+| 0:00 - 0:03 | Welcome |
+| 0:03 - 0:15 | Slides |
+| 0:15 - 0:17 | NOTE: Switch to Notebook |
+| 0:17 - 0:25 | Line Plots |
+| 0:25 - 0:35 | Bar Plots and Histograms |
+| 0:35 - 0:44 | Scatter Plots |
+| 0:44 - 0:58 | Independent Exercises |
+| 0:58 - 1:00 | Summary |
+
+## Materials and Preparation
+- Send out the presentation link.
+- Students will need the data sets and notebook. Consider having a zip file of all notebooks and data sets for the rest of the unit that you hand out at the beginning of this lesson. Alternatively, link them directly in GitHub - remember that they haven't learned GitHub, so you'll need to help them download the files.
+
+## Differentiation and Extensions
+
+- If students are excelling in the first half, consider deeper discussions surrounding five number summaries, data integrity, off-the-cuff filters and sorts
+- If students are struggling, work on the code more heavily than the **Class Questions** portions. Make the Independent Exercises be Collective Exercises (as a class)
+
+## In Class: Materials
+- Projector
+- Internet connection
+- Jupyter Notebooks
+- Python3
+-->
+<hr />
+<aside class="notes">
+<p><strong>Talking Points</strong>: This lesson introduces the Pandas library and the beginnings of Exploratory Data Analysis. The majority of the lesson should be spent going through code – whether that is via Jupyter Slides or a Jupyter Notebook demonstration.</p>
+<p>To present this content, begin with <code>04-plotting-with-pandas.ipynb</code> to introduce Pandas as a library and data integrity. Transition to the Jupyter Notebook to introduce reading in data, column manipulation, filtering and sorting; conclude with exercises.</p>
+<strong>Teaching Tips</strong>: - There are <strong>Class Questions</strong> littered throughout the notebook. Use as much/little time on these as you see fit relative to how your class is pacing - There is no <strong>Independent Exercise</strong> at the end of this lesson. It is aspirational to have time to let students work entirely independently on this time-wise, so consider doing a guided code-along or paired programming. Use this time to have students set their own challenges. - Pause after learning objectives and level-set for what students will get out of the lesson
+</aside>
+<hr />
+</section>
+<section id="a-note-on-delivery" class="level2">
+<h2>A Note on Delivery</h2>
+<ul>
+<li>This unit’s lessons will occur in <a href="http://jupyter.org/">jupyter notebooks</a>
+<ul>
+<li>Slides will be an introduction to the lesson (no code, just overview)</li>
+<li>Then, we’ll open a notebook and start coding!</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>: - We could have made this into a speaker note, but it’s helpful to get it out there so everybody’s on the same page - No repl.it for this unit as we’ll be in notebooks</p>
+</aside>
+<hr />
+</section>
+<section id="plotting-with-pandas" class="level2">
+<h2>Plotting with Pandas</h2>
+<ul>
+<li>Pandas <code>.plot()</code> functionality is effectively a wrapper for <a href="https://matplotlib.org/">matplotlib</a></li>
+<li>Matplotlib is a charting library for python and scientific computing</li>
+<li>It’s considered the de-facto standard for charting locally
+<ul>
+<li>It’s best for scientific papers, EDA, and general introspection of data</li>
+<li>It’s not so great for production level charts that are embedded in applications (check out <a href="https://d3js.org/">d3.js</a></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p><strong>Talking Points</strong>:</p>
+<ul>
+<li>Talk briefly about where charts are interpreted, and why different tools may be advantageous</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="so-pandas-and-matplotlib" class="level2">
+<h2>So, Pandas and Matplotlib</h2>
+<p>Whats a wrapper?</p>
+<ul>
+<li>A program that <em>abstracts</em> another program to modify its interface</li>
+</ul>
+<p>???</p>
+<ul>
+<li>Pandas <code>.plot()</code> functionality references matplotlib behind the scenes</li>
+<li>Matplotlib has a reputation for being fairly complex
+<ul>
+<li>Even for fairly simple charts, you will frequently write loops</li>
+<li>A fairly plain chart can be 20-30 lines of code</li>
+</ul></li>
+<li>Pandas helps us here and most charts can be produced with 1-2 lines of code
+<ul>
+<li>Some functionality is reduced, but <em>effort is minimized in most cases</em></li>
+</ul></li>
+</ul>
+<aside class="notes">
+<p><strong>Talking Points</strong>:</p>
+<ul>
+<li>Encourage students to learn matplotlib on their own time if they wish</li>
+<li>Many data science shops use matplotlib as a standard
+<ul>
+<li>It’s a bit older and a little hokey, but it’s well supported, open source, and generally gets the job done</li>
+</ul></li>
+<li>Take some time to talk about the balance between package complexity and utility overall - sometimes a good answer delivered on time beats a perfect answer delivered late</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="talk-data-to-me" class="level2">
+<h2>Talk Data to Me</h2>
+<p>We’ll be using three data sets for this lesson:</p>
+<ul>
+<li>Football Records: International football results from 1872 to 2018</li>
+<li>Avocado Prices: Historical data on avocado prices and sales volume in multiple US markets</li>
+<li>Chocolate Bar Ratings: Expert ratings of over 1,700 chocolate bars</li>
+</ul>
+<p>All datasets have been graciously downloaded from Kaggle.com, and we’ll discover that the right visualization can often replace a bit of fancy machine learning, if done properly.</p>
+<aside class="notes">
+<p><strong>Talking Points</strong>:</p>
+<ul>
+<li>We’ll be walking through the data sets during the lesson, feel free to refer to the links there if you wish.</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="chart-types" class="level2">
+<h2>Chart Types</h2>
+<p>We’ll be covering the following chart types during this lesson:</p>
+<ul>
+<li>Time series line charts</li>
+<li>Categorical bar charts</li>
+<li>Histograms of single columns</li>
+<li>Histograms of entire data frames</li>
+<li>Scatter plots (continuous vs continuous)</li>
+<li>Scatter matricies (multiple scatter plots in a grid)</li>
+<li>Scatter plots with class colors for data points</li>
+</ul>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>This is the tip of the iceberg for plots, that’s okay</li>
+<li>Assure students that the above charts have been selected specifically to cover the majority of cases you’ll encounter</li>
+<li>Take a minute to talk about the common use cases for each of these, as well as the data types they all prefer</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="lets-go" class="level2">
+<h2>Let’s Go!</h2>
+<ul>
+<li>Open up your dataset!</li>
+</ul>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>Make sure everyone gets to the notebook successfully.</li>
+<li>Have students assist one another and walk around the room to ensure everyone gets to the notebook successfully</li>
+<li>Make sure all students can open and run their Notebooks. It’s only the second time they’ve done so!</li>
+<li>The presentation is also at the top of the Notebook, so students can later reference in one place. Jump down to <code>Importing Pandas</code>.</li>
+</ul>
+</aside>
+<hr />
+</section>
+
+</div>
+<footer><span class='slide-number'></span></footer>
+</div>
+<script src="../../../../lib/js/head.min.js"></script>
+<script src="../../../../js/reveal.js"></script>
+
+<script>
+
+var dependencies = [
+  { src: '../../../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: '../../../../plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: '../../../../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: '../../../../plugin/prism/prism.js', async: true, callback: function() { /*hljs.initHighlightingOnLoad();*/ } },
+  { src: '../../../../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+];
+
+if (Reveal.getQueryHash().instructor === 1) {
+  dependencies.push({ src: '../../../../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } });
+}
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: false,
+    slideNumber: true,
+
+  // available themes are in /css/theme
+      theme: Reveal.getQueryHash().theme || 'default',
+  
+  // default/cube/page/concave/zoom/linear/fade/none
+      transition: Reveal.getQueryHash().transition || 'slide',
+  
+  // Optional libraries used to extend on reveal.js
+  dependencies: dependencies
+  });
+
+  if (Reveal.getQueryHash().instructor === 1) {
+    Reveal.configure(dependencies.push({ src: '../../../../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }));
+  }
+
+
+
+  Reveal.addEventListener('ready', function() {
+    if (Reveal.getCurrentSlide().classList.contains('separator-subhead')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-subhead.css');
+    } else if (Reveal.getCurrentSlide().classList.contains('separator')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-title.css')
+    } else {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga.css');
+    }
+  });
+
+  Reveal.addEventListener('slidechanged', function(e) {
+    if (Reveal.getCurrentSlide().classList.contains('separator-subhead')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-subhead.css');
+    } else if (Reveal.getCurrentSlide().classList.contains('separator')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-title.css')
+    } else {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga.css');
+    }
+  });
+</script>
+
+</body>
+</html>

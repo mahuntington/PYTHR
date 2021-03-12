@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<!--
+  Copyright 2010 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Ernest Delgado (ernestd@google.com)
+                 Alex Russell (slightlyoff@chromium.org)
+
+  landslide modifications: Adam Zapletal (adamzap@gmail.com)
+                           Nicolas Perriault (nperriault@gmail.com)
+-->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title><img alt="" src="https://s3.amazonaws.com/python-ga/images/GA_Cog_Medium_White_RGB.png" />  {.separator}</title>
+    <!-- Styles -->
+    
+    <link rel="stylesheet" media="print" href="file://d:\anaconda3\lib\site-packages\landslide\themes\default\css\print.css">
+    <link rel="stylesheet" media="screen, projection" href="file://d:\anaconda3\lib\site-packages\landslide\themes\default\css\screen.css">
+    
+    
+    <!-- /Styles -->
+    <!-- Javascripts -->
+    
+    <script type="text/javascript" src="file://d:\anaconda3\lib\site-packages\landslide\themes\default\js\slides.js"></script>
+    
+    
+    
+    <!-- /Javascripts -->
+</head>
+<body>
+  <div id="blank"></div>
+  <div class="presentation">
+    <div id="current_presenter_notes">
+      <div id="presenter_note"></div>
+    </div>
+    <div class="slides">
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-1">
+          <div class="inner">
+            
+            <header><h1><img alt="" src="https://s3.amazonaws.com/python-ga/images/GA_Cog_Medium_White_RGB.png" />  {.separator}</h1></header>
+            
+            
+            <section><h1>Intro to Intermediate Python</h1>
+
+<!--
+
+# Overview
+This lesson starts with a recap of all of the topics covered up to this point, giving students a final chance to express their questions before we move beyond the basics. Most slides are in a "Lecture + Question -> Answer" format. It then has a very quick overview of the upcoming unit — user input and file I/O, abstraction, modules, and APIs.
+
+- As you go through this lesson, do frequent checks for understanding. It's important that students understand everything before we add more complicated things like `itertools` and APIs.
+
+- When you get to the new unit overview, put questions in the parking lot — there's a presentation on each topic.
+
+# Differentiation and Extensions
+
+- If students are breezing through this lesson, that's great! Don't stop for long on each slide.
+- If students are having trouble in the recap, add in We Dos.
+
+# Learning Objectives
+In this lesson, students will:
+
+- Confidently recap the previous units.
+- Describe key components of the upcoming unit.
+
+# Duration
+20 minutes
+
+# Suggested Agenda
+
+| Time | Activity |
+| --- | --- |
+| 0:00 - 0:03 | Welcome |
+| 0:04 - 0:12 | Basic Topics Recap |
+| 0:13 - 0:17 | Intermediate Topics Preview |
+| 0:17 - 0:20 | Summary |
+
+
+# In Class: Materials
+- Projector
+- Internet connection
+- Python 3
+--></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              1/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-2">
+          <div class="inner">
+            
+            <header><h1>Learning Objectives</h1></header>
+            
+            
+            <section><p><em>After this lesson, you will be able to:</em></p>
+<ul>
+<li>Confidently recap the previous units.</li>
+<li>Describe key components of the upcoming unit.</li>
+</ul>
+<aside class="notes">
+
+**Talking Points:**
+
+- This lesson is pretty solidly a review.
+- Then, we'll very briefly introduce all of the concepts covered the next unit. Don't worry about learning them here! It's the final Python unit and it covers quite a lot, so we'll just give you an overview in advance.
+
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              2/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-3">
+          <div class="inner">
+            
+            <header><h1>Leveling Up</h1></header>
+            
+            
+            <section><p>You're leveling up!</p>
+<p>You have the proper foundation. Now, let's check how you're doing.</p>
+<aside class="notes">
+
+**Teaching Tip:**
+
+- Reassure learners that they're great for hanging in this far!
+
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              3/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-4">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Lists</h1></header>
+            
+            
+            <section><ul>
+<li>A collection of items stored in a single variable.</li>
+<li>Created with square brackets (<code>[]</code>).</li>
+<li>Begin counting at <code>0</code>.</li>
+</ul>
+<p>```python
+my_queens = ["Cersei", "Daenerys", "Arwen", "Elsa", "Guinevere"]
+step_counts_this_week = [8744, 5256, 7453, 3097, 4122, 2908, 6720]</p>
+<h1>We can also mix types.</h1>
+<p>weird_list = [1, "weird", ["nested list"], "eh?"]
+```</p>
+<blockquote>
+<p><strong>Challenge:</strong> Can you recall how to slice a section of the list? For example, items 2 through 5 of <code>step_counts_this_week</code>?</p>
+</blockquote>
+<aside class="notes">
+
+**Talking Points:**
+
+- Lists are a collection of items stored in a single variable.
+- Lists can be of any type, but they are typically of related items.
+
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              4/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-5">
+          <div class="inner">
+            
+            <header><h1>Answer: Lists Challenge</h1></header>
+            
+            
+            <section><ul>
+<li>Python uses a <code>:</code> to represent a range of indices.</li>
+<li>Beware of off-by-one errors!</li>
+</ul>
+<p><code>python
+step_counts_this_week = [8744, 5256, 7453, 3097, 4122, 2908, 6720]
+days_2_thru_5 = step_counts_this_week[2:6] # Items 2, 3, 4, and 5</code></p>
+<blockquote>
+<p><strong>Pro tip:</strong> It's <code>6</code> instead of <code>5</code> because the range is exclusive.</p>
+</blockquote></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              5/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-6">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Loops and Iteration</h1></header>
+            
+            
+            <section><p>What about looping a list?</p>
+<p>```python
+my_queens = ["Cersei", "Daenerys", "Arwen", "Elsa", "Guinevere"]</p>
+<p>for queen in my_queens:
+    print(queen, "is the most powerful queen!")
+```</p>
+<blockquote>
+<p><strong>Challenge:</strong> What if I want to loop from 1 to 10 and print out the numbers? How do I do this without a data structure to loop over?</p>
+</blockquote></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              6/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-7">
+          <div class="inner">
+            
+            <header><h1>Answer: Loops Challenge</h1></header>
+            
+            
+            <section><p>To loop 1–10 without a data structure:</p>
+<p>```python</p>
+<h1>Remember, "i" is a common name for a counter/index in programming!</h1>
+<p>for i in range(1, 11):
+    print(i)
+```</p>
+<ul>
+<li>Why do you think we put <code>11</code> in the code?</li>
+<li>What values does this print?</li>
+</ul></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              7/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-8">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Sets</h1></header>
+            
+            
+            <section><ul>
+<li>Lists that don't have duplicates.</li>
+<li>Created with curly braces (<code>{}</code>) or from lists with the <code>set()</code> function.</li>
+<li>Aren't indexed — elements are in any order!</li>
+<li>Handy for storing emails, user names, and other unique elements.</li>
+</ul>
+<p>```python
+email_set = {'my_email@gmail.com', 'second_email@yahoo.com', "third_email@hotmail.com"}</p>
+<h1>Or from a list:</h1>
+<p>my_list = ["red",  "yellow", "green", "red", "green"]
+my_set = set(my_list)</p>
+<h1>=&gt; {"red",  "yellow", "green"}</h1>
+<p>```</p>
+<aside class="notes">
+
+**Talking Point:**
+
+- Sets are lists that don't have duplicates.
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              8/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-9">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Tuples</h1></header>
+            
+            
+            <section><ul>
+<li>Lists that can't be changed!</li>
+<li>Created with parentheses (<code>()</code>).</li>
+<li>Can't add, pop, remove, or otherwise change elements after creation.</li>
+</ul>
+<p><code>python
+rainbow_colors_tuple = ("red", "orange", "yellow", "green", "blue", "indigo", "violet")</code></p>
+<aside class="notes">
+
+**Talking Point:**
+
+- Tuples are lists that can't be changed.
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              9/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-10">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Dictionaries</h1></header>
+            
+            
+            <section><ul>
+<li>A collection of key-value pairs.</li>
+<li>Created with curly braces (<code>{key: value, key: value}</code>).</li>
+<li>Values can be anything!</li>
+</ul>
+<p><code>python
+my_puppy = {
+    "name": "Fido",
+    "breed": "Corgi",
+    "age": 3,
+    "vaccinated": True,
+    "fave toy": ["chew sticks", "big sticks", "any sticks"]
+}</code></p>
+<blockquote>
+<p><strong>Challenge:</strong> Can you recall how to iterate (loop) over each key of <code>my_puppy</code> and print out both the key and the corresponding value?</p>
+</blockquote>
+<aside class="notes">
+
+**Talking Points:**
+
+- Dictionaries are made of key-value pairs.
+- We split lines for readability.
+
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              10/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-11">
+          <div class="inner">
+            
+            <header><h1>Answer: Dictionaries Challenge</h1></header>
+            
+            
+            <section><p>Iterating a dictionary is similar to a list:</p>
+<p><code>python
+for key in my_puppy:
+    print(key, "-", my_puppy[key])</code></p>
+<p>Outputs:</p>
+<p><code>name - Fido
+breed - Corgi
+age - 3
+vaccinated - True
+fave toy - chew sticks</code></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              11/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-12">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Functions</h1></header>
+            
+            
+            <section><ul>
+<li>Bits of code that can be used repeatedly.</li>
+<li>Enable DRY — Don't Repeat Yourself.</li>
+<li>Declared with <code>def</code>, <code>()</code>, and <code>:</code>.</li>
+<li>Declare the function <em>above</em> the function call!</li>
+</ul>
+<p>```python</p>
+<h1>Function definition:</h1>
+<p>def say_hello():
+    print("hello!")</p>
+<h1>Run the function three times.</h1>
+<p>say_hello()
+say_hello()
+say_hello()
+```</p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              12/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-13">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Function Parameters</h1></header>
+            
+            
+            <section><p>Parameters are in the function definition.</p>
+<ul>
+<li>Arguments are in the function call.</li>
+<li>Useful for very similar code with only minor variations.</li>
+</ul>
+<p><strong>Challenge:</strong> Rewrite the code below to use a single function with one parameter.</p>
+<iframe height="400px" width="100%" src="https://repl.it/@GAcoding/python-programming-intro-intermed?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<aside class="notes">
+
+**Teaching Tips:**
+
+- This is long; encourage students to open it in a new window.
+- Review the answer afterward.
+
+**Talking Point:**
+
+- Parameters to functions allow us to pass in arguments to use within the function. This is useful when you have very similar code.
+
+**Repl.it note:** The code here is:
+```python
+# Function definitions:
+def say_hello_ada():
+  print("hello, Ada")
+
+def say_hello_alan():
+  print("hello, Alan")
+
+def say_hello_linus():
+  print("hello, Linus")
+
+# Call the functions:
+say_hello_ada()
+say_hello_alan()
+say_hello_linus()
+```
+
+> **Challenge:** Could we do this with a single function that has a parameter called "name"?
+
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              13/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-14">
+          <div class="inner">
+            
+            <header><h1>Function Parameters: Solution</h1></header>
+            
+            
+            <section><iframe height="400px" width="100%" src="https://repl.it/@GAcoding/python-programming-intro-intermed-helloperson-solution?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              14/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-15">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Return Statements</h1></header>
+            
+            
+            <section><ul>
+<li>Bring data out of a function.</li>
+<li>Cause the function to exit.</li>
+<li>Aren't a <code>print</code> statement!</li>
+</ul>
+<p>```python
+def multiply(x, y):
+    return x * y</p>
+<p>result = multiply(3, 4) # Result is now equal to 12.
+```</p>
+<aside class="notes">
+
+**Talking Point:**
+
+- Return statements bring data out of a function. They are not the same thing as `print` statements, which simply output text.
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              15/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-16">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Classes</h1></header>
+            
+            
+            <section><ul>
+<li>Templates (aka, blueprints) for objects.</li>
+<li>Can contain methods and/or variables.</li>
+<li><code>self</code> is a reference to the created object.</li>
+</ul>
+<p>```python
+class Animal():
+    def <strong>init</strong>(self):
+        self.energy = 50</p>
+<pre><code>def get_status(self):
+    if self.energy &lt; 20:
+        print("I'm hungry!")
+    elif self.energy &gt; 100:
+        print("I'm stuffed!")
+    else:
+        print("I'm doing well!")
+</code></pre>
+<p>```</p>
+<blockquote>
+<p><strong>Challenge:</strong> How do you declare a new <code>Animal</code>?</p>
+</blockquote>
+<aside class="notes">
+
+**Talking Point:**
+
+- Classes are essentially blueprints for object-making factories. They can be used to make several objects of the same type.
+
+</aside></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              16/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-17">
+          <div class="inner">
+            
+            <header><h1>Answer: Classes</h1></header>
+            
+            
+            <section><p>Declaring a new <code>Animal</code> from the class:</p>
+<p><code>python
+my_animal = Animal() # Creates a new Animal instance.
+my_animal.get_status() # Prints "I'm doing well!"
+my_animal.energy += 100 # We can access properties!
+my_animal.get_status() # Prints "I'm stuffed!"</code></p></section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              17/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+      <!-- slide source: c:\users\General Assembly\Downloads\19-intermed-intro-slides.md -->
+      <div class="slide-wrapper">
+        <div class="slide slide-18">
+          <div class="inner">
+            
+            <header><h1>Let's Review: Inheritance</h1></header>
+            
+            
+            <section><p>A class can inherit properties and methods from another class.</p>
+<p><strong>You Do:</strong> Create a new class, <code>Dog</code>, which inherits from <code>Animal</code>.</p>
+<ul>
+<li><code>Dog</code> has an extra function, <code>bark()</code>, that prints <code>"bark"</code>.</li>
+<li><code>Dog</code> has an extra property, <code>breed</code>.</li>
+</ul>
+<iframe height="400px" width="100%" src="https://repl.it/@GAcoding/python-programming-intro-inter-classes?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<aside class="notes">
+
+**Talking Point:**
+
+- Inheritance is all about reusing code. You may have two classes that are related. Inheritance allows you to take advantage of that.
+
+---
+
+# Inheritance: Answer
+
+<iframe height="400px" width="100%" src="https://repl.it/@GAcoding/python-programming-intro-inheritance-answer?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+---
+
+# Knowledge Check
+
+We're about to move on to the next unit: Intermediate Python.
+
+Any questions?
+
+> Don't be shy! If you have a question, so do others!
+
+---
+
+# Switching Gears: Preview
+
+The next unit covers many topics, including:
+
+- File I/O
+- Modules and libraries
+
+You don't need to memorize them now! This is just an overview.
+
+
+---
+
+# User Input and File I/O
+
+You've seen this a few times already with `input()`.
+
+We'll build real interactions between your Python programs and other files — or the person using your app!
+
+
+
+---
+
+# Modules and Libraries
+
+
+We mentioned these in the pre-work!
+
+Modules and libraries are:
+
+- Code that others have written.
+- Free to use!
+- Useful extensions of the Python language (e.g., a fancy date and time formatter).
+
+This one tells us when Mother's Day is for a given year:
+
+<iframe height="300px" width="100%" src="https://repl.it/@GAcoding/python-programming-intro-inter-modules?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+
+---
+
+# Summary and Q&A
+
+We reviewed topics from earlier lessons:
+
+* Lists, sets, tuples, and dictionaries.
+* Loops and iteration.
+* Functions, parameters, and return statements.
+* Classes and inheritance.
+
+We brushed the surface on some upcoming topics:
+
+* File I/O.
+* Modules and libraries.
+
+Let's jump in to it!
+
+
+
+---
+
+# Additional Reading and Resources
+
+Now that you have an understanding of basic programming, here are some cool people to read about:
+
+- **[Ada Lovelace](https://en.wikipedia.org/wiki/Ada_Lovelace):** Regarded as the first programmer.
+- **[Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing):** Considered the father of theoretical computer and artificial intelligence; helped crack the enigma code during World War II.
+- **[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds):** Creator of Linux OS and Git.</section>
+            
+          </div>
+          <div class="presenter_notes">
+            <header><h1>Presenter Notes</h1></header>
+            <section>
+            
+            </section>
+          </div>
+          <footer>
+            
+            <aside class="source">
+              Source: <a href="c:\users\General Assembly\Downloads\19-intermed-intro-slides.md">c:\users\General Assembly\Downloads\19-intermed-intro-slides.md</a>
+            </aside>
+            
+            <aside class="page_number">
+              18/18
+            </aside>
+          </footer>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="toc" class="sidebar hidden">
+    <h2>Table of Contents</h2>
+    <table>
+      <caption>Table of Contents</caption>
+      
+      <tr id="toc-row-1">
+        <th><a href="#slide1"><img alt="" src="https://s3.amazonaws.com/python-ga/images/GA_Cog_Medium_White_RGB.png" />  {.separator}</a></th>
+        <td><a href="#slide1">1</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-2">
+        <th><a href="#slide2">Learning Objectives</a></th>
+        <td><a href="#slide2">2</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-3">
+        <th><a href="#slide3">Leveling Up</a></th>
+        <td><a href="#slide3">3</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-4">
+        <th><a href="#slide4">Let's Review: Lists</a></th>
+        <td><a href="#slide4">4</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-5">
+        <th><a href="#slide5">Answer: Lists Challenge</a></th>
+        <td><a href="#slide5">5</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-6">
+        <th><a href="#slide6">Let's Review: Loops and Iteration</a></th>
+        <td><a href="#slide6">6</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-7">
+        <th><a href="#slide7">Answer: Loops Challenge</a></th>
+        <td><a href="#slide7">7</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-8">
+        <th><a href="#slide8">Let's Review: Sets</a></th>
+        <td><a href="#slide8">8</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-9">
+        <th><a href="#slide9">Let's Review: Tuples</a></th>
+        <td><a href="#slide9">9</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-10">
+        <th><a href="#slide10">Let's Review: Dictionaries</a></th>
+        <td><a href="#slide10">10</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-11">
+        <th><a href="#slide11">Answer: Dictionaries Challenge</a></th>
+        <td><a href="#slide11">11</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-12">
+        <th><a href="#slide12">Let's Review: Functions</a></th>
+        <td><a href="#slide12">12</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-13">
+        <th><a href="#slide13">Let's Review: Function Parameters</a></th>
+        <td><a href="#slide13">13</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-14">
+        <th><a href="#slide14">Function Parameters: Solution</a></th>
+        <td><a href="#slide14">14</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-15">
+        <th><a href="#slide15">Let's Review: Return Statements</a></th>
+        <td><a href="#slide15">15</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-16">
+        <th><a href="#slide16">Let's Review: Classes</a></th>
+        <td><a href="#slide16">16</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-17">
+        <th><a href="#slide17">Answer: Classes</a></th>
+        <td><a href="#slide17">17</a></td>
+      </tr>
+      
+      
+      <tr id="toc-row-18">
+        <th><a href="#slide18">Let's Review: Inheritance</a></th>
+        <td><a href="#slide18">18</a></td>
+      </tr>
+      
+      
+    </table>
+  </div>
+  
+  <div id="help" class="sidebar hidden">
+    <h2>Help</h2>
+    <table>
+      <caption>Help</caption>
+      <tr>
+        <th>Table of Contents</th>
+        <td>t</td>
+      </tr>
+      <tr>
+        <th>Exposé</th>
+        <td>ESC</td>
+      </tr>
+      <tr>
+        <th>Full screen slides</th>
+        <td>e</td>
+      </tr>
+      <tr>
+        <th>Presenter View</th>
+        <td>p</td>
+      </tr>
+      <tr>
+        <th>Source Files</th>
+        <td>s</td>
+      </tr>
+      <tr>
+        <th>Slide Numbers</th>
+        <td>n</td>
+      </tr>
+      <tr>
+        <th>Toggle screen blanking</th>
+        <td>b</td>
+      </tr>
+      <tr>
+        <th>Show/hide slide context</th>
+        <td>c</td>
+      </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2</td>
+      </tr>
+      <tr>
+        <th>Help</th>
+        <td>h</td>
+      </tr>
+    </table>
+  </div>
+  <script>main()</script>
+</body>
+</html>

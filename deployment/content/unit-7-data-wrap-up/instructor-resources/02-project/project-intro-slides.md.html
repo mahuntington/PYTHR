@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title></title>
+
+<meta name="description" content="">
+
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- For syntax highlighting -->
+<link rel="stylesheet" href="../../../../lib/css/zenburn.css">
+<link rel="stylesheet" href="../../../../lib/css/prism.css">
+
+<link rel="stylesheet" href="../../../../css/reveal.css">
+<link rel="stylesheet" href="../../../../css/theme/ga-title.css" id="theme">
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" href="https://s3.amazonaws.com/python-ga/proxima-nova/fonts.css" />
+
+</head>
+
+<body class="language-javascript">
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+
+<!--
+title: Python Programming
+type: lesson
+duration: "01:30"
+creator: Joseph Nelson
+-->
+<section id="project-time" class="level2">
+<h2><img src="https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png" /> Project Time!</h2>
+<!--
+
+## Overview
+This introduces the unit project, which spans either a few hours or a few days (depending on the delivery mode of this class). Go through these short slides, then pull up the project prompts with students and make sure each student has an idea. Walk around the room and offer help and suggestions. After this project, there is only the project presentations (optional) and the overall course summary (about an hour) left.
+
+### Notes:
+
+- The project prompt is identical to this presentation. Feel free to jump right to the project prompt overview.
+
+
+
+## Learning Objectives
+In this lesson, students will:
+- Apply what they've learned in the course to create a working Python program from scratch.
+
+
+## Duration
+Depends on delivery method (5 day accelerated course delivery or 10 week part time delivery)- a few hours or a few days.
+
+## Suggested Agenda
+
+| Time | Activity |
+| --- | --- |
+| 0:00 - 0:05 | Welcome / Set up |
+| 0:05 + | Introduce project and work! |
+
+## Before Class: Preparation
+- Before class, review the prompt and brainstorm ideas of directions to point students to if they're at a loss.
+
+## In Class: Materials
+- Projector
+- Internet connection
+- Python 3.0
+- Project prompt
+
+-->
+<hr />
+</section>
+<section id="youve-made-it" class="level2">
+<h2>You’ve Made It!</h2>
+<p>Congratulations on making it this far!</p>
+<p><img src="https://media.giphy.com/media/OcZp0maz6ALok/giphy.gif" /></p>
+<aside class="notes">
+<p><strong>Talking Points</strong>:</p>
+<ul>
+<li>Congratulate them on finishing the course!</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="you-do-project" class="level2">
+<h2>You Do: Project</h2>
+<p>For the final project, you’re making a new app of your choosing from scratch.</p>
+<p>If you’re having trouble coming up with a topic, consider:</p>
+<ul>
+<li>Find a fun dataset and base it on that.</li>
+<li>Make an app that contrasts data from your hobbies.</li>
+<li>Make something you think would improve your life in some way.</li>
+<li>Feel free to share resources and inspiration with your classmates!</li>
+</ul>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>Stress that they’re building this from scratch, individually. There are no prompts - they can do anything they want.</li>
+<li>Get them excited!</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="deliverables" class="level2">
+<h2>Deliverables</h2>
+<p>You must have a Pandas app in Jupyter Notebooks.</p>
+<p>You will work individually on this project, but feel free to share inspiration, resources, or cool datasets that you find with your classmates!</p>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>Stress that just because they have to work individually doesn’t mean they can’t share cool things they find or brainstorm with each other - or ask for help!</li>
+</ul>
+</aside>
+<hr />
+<section id="requirements" class="level3">
+<h3>Requirements</h3>
+<p>Your assignment <strong>must</strong> include:</p>
+<ol type="1">
+<li>Data pulled from at least one dataset.
+<ul>
+<li>Get creative! Tons of free datasets exist! Ask your instructor or classmates for ideas!</li>
+</ul></li>
+<li>Data displayed in a minimum of two different visualizations.
+<ul>
+<li>Take care that they’re the best choice of visualizations for the data and are easy to comprehend.</li>
+</ul></li>
+<li>Cleaning the data - handling of null values or other potential errors in the data.</li>
+<li>Core Python topics. At minimum:
+<ul>
+<li>Dictionaries <em>or</em> sets, <em>or</em> tuples.</li>
+<li><code>**args</code> <em>or</em> <code>kwargs</code> <em>or</em> <code>*kwargs</code>.</li>
+<li>Basic debugging, such as a <code>try/except</code> block, <em>(only if necessary)</em>.</li>
+<li>A class.</li>
+<li>User input <em>or</em> reading from a file.</li>
+</ul></li>
+<li>Comments, so another developer can easily see what your app does.</li>
+</ol>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>Walk down this list and be sure students understand what each item means.</li>
+</ul>
+</aside>
+<hr />
+</section>
+</section>
+<section id="suggested-ways-to-get-started" class="level2">
+<h2>Suggested Ways to Get Started</h2>
+<ul>
+<li><strong>Begin with the end in mind.</strong> Know where you want to go by planning ahead, so you don’t waste time building things you don’t need.</li>
+<li><strong>Read the docs</strong> for whatever technologies or datasets you use. Most of the time, there is a tutorial that you can follow! This isn’t always the case, though, learning to read documentation is crucial to your success as a developer.</li>
+<li><strong>Write pseudocode before you write actual code.</strong> Thinking through the logic of something helps.</li>
+</ul>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>Encourage them to get a really solid idea fleshed out before they start the execution.</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="useful-resources" class="level2">
+<h2>Useful Resources</h2>
+<ul>
+<li>An <a href="https://www.dropbox.com/s/cqsxfws52gulkyx/drawing.pdf">extremely helpful debugging flowchart</a></li>
+<li>The <a href="https://docs.python.org">Python Docs</a></li>
+<li><a href="http://treyhunner.com/2018/04/keyword-arguments-in-python/">Keyword Args</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-args-and-kwargs-in-python-3">Args and Kwargs</a></li>
+<li><a href="http://programeveryday.com/post/using-python-itertools-to-save-memory/">Chain and Other Itertools</a></li>
+<li><a href="https://www.learnpython.org/en/Sets">Sets, on a Python tutorial website</a>)</li>
+<li><a href="http://openbookproject.net/thinkcs/python/english3e/tuples.html">Tuples</a></li>
+</ul>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>These are helpful if they need a quick refresher or have extra time.</li>
+</ul>
+</aside>
+<hr />
+</section>
+<section id="evaluation" class="level2">
+<h2>Evaluation</h2>
+<p>Your project will be evaluated based on the rubric below.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Score</th>
+<th>Expectations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>No credit - Incomplete</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Half credit - Working app without all requirements</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Full credit - Working app with all requirements</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Extra credit - Working app with bonus enhancements</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p><strong>Talking Points</strong>:</p>
+<ul>
+<li>A 0 to 3 grade may not intuitively make sense, so here is an example using the criteria as if your assignment were to cook a pizza:</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Criteria</th>
+<th style="text-align: left;"><strong>0</strong> Incomplete.</th>
+<th style="text-align: left;"><strong>1</strong> Does not meet expectations.</th>
+<th style="text-align: left;"><strong>2</strong> Meets expectations</th>
+<th style="text-align: left;"><strong>3</strong> Exceeds expectations</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Crust</td>
+<td style="text-align: left;">No crust present. Submission is just cheese and sauce on a plate.</td>
+<td style="text-align: left;">Pizza has a crust, but it is raw.</td>
+<td style="text-align: left;">Crust is cooked thoroughly.</td>
+<td style="text-align: left;">Crust is golden brown and just thin enough without being too thick.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cheese</td>
+<td style="text-align: left;">No cheese present.</td>
+<td style="text-align: left;">Cheese is made of cardboard.</td>
+<td style="text-align: left;">Cheese covers the pizza from edge to edge.</td>
+<td style="text-align: left;">Cheese is delicious, plentiful, and melted to perfection.</td>
+</tr>
+</tbody>
+</table>
+</aside>
+<hr />
+</section>
+<section id="lets-get-started" class="level2">
+<h2>Let’s Get Started!</h2>
+<p><strong>Open the Final Project Prompt {<code>final-project-prompt</code>} to see the project and its instructions. Follow the instructions there.</strong></p>
+<p>Remember:</p>
+<ul>
+<li>You’re making any app you’d like! Find something that interests you.</li>
+<li>You must have a Pandas app in Jupyter Notebooks.</li>
+<li>Don’t be afraid to ask for help!</li>
+</ul>
+<aside class="notes">
+<p><strong>Teaching Tips</strong>:</p>
+<ul>
+<li>Make sure you change the link or point out what PDF to look at, and check the starter code location.</li>
+<li>Make sure all students start with working code - they can get it from the starter code file.</li>
+<li>Note that the Final Project Prompt is all this information in PDF form instead of slide form, so it’s easier for them to refer to.</li>
+<li>Stay on this slide!</li>
+</ul>
+</aside>
+</section>
+
+</div>
+<footer><span class='slide-number'></span></footer>
+</div>
+<script src="../../../../lib/js/head.min.js"></script>
+<script src="../../../../js/reveal.js"></script>
+
+<script>
+
+var dependencies = [
+  { src: '../../../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: '../../../../plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: '../../../../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: '../../../../plugin/prism/prism.js', async: true, callback: function() { /*hljs.initHighlightingOnLoad();*/ } },
+  { src: '../../../../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+];
+
+if (Reveal.getQueryHash().instructor === 1) {
+  dependencies.push({ src: '../../../../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } });
+}
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: false,
+    slideNumber: true,
+
+  // available themes are in /css/theme
+      theme: Reveal.getQueryHash().theme || 'default',
+  
+  // default/cube/page/concave/zoom/linear/fade/none
+      transition: Reveal.getQueryHash().transition || 'slide',
+  
+  // Optional libraries used to extend on reveal.js
+  dependencies: dependencies
+  });
+
+  if (Reveal.getQueryHash().instructor === 1) {
+    Reveal.configure(dependencies.push({ src: '../../../../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }));
+  }
+
+
+
+  Reveal.addEventListener('ready', function() {
+    if (Reveal.getCurrentSlide().classList.contains('separator-subhead')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-subhead.css');
+    } else if (Reveal.getCurrentSlide().classList.contains('separator')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-title.css')
+    } else {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga.css');
+    }
+  });
+
+  Reveal.addEventListener('slidechanged', function(e) {
+    if (Reveal.getCurrentSlide().classList.contains('separator-subhead')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-subhead.css');
+    } else if (Reveal.getCurrentSlide().classList.contains('separator')) {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga-title.css')
+    } else {
+      document.getElementById('theme').setAttribute('href', '../../../../css/theme/ga.css');
+    }
+  });
+</script>
+
+</body>
+</html>
