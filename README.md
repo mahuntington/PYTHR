@@ -53,13 +53,13 @@ Make sure the cells in your Jupyter notebook have been run before saving so we c
 Day 1 | Day 2 | Day 3 | Day 4 | Day 5 | Day 6 |
 ----  | --- | --- | ---| --- | --- |
 [:30] Course Introductions | [:30] Day 2 Kickoff & Review  | [:30] Day 3 Kickoff & Review | [:30] Day 4 Kickoff & Review | [:30] Day 5 Kickoff & Review | [3:00] [In-Class: Final Project Workshop][6-1C] |
-[:30] Python Installations | [1:00] [Functions (cont'd)][2-1B] | [:30] [Inheritance][3-1A] | [:45] [Modules & Libraries][4-1E] | [:30] [Intro to Charts][5-1E2] | [1:00] Lunch |
-[:05] Break | [:10] Break | [:05] Break | [:10] Break | [:05] Break | [1:30] [Project Presentations][6-1E] | 
+[:30] Python Installations | [1:00] [Functions (cont'd)][2-1B] | [:30] [Inheritance][3-1A] | [:45] [Modules & Libraries][4-1E] | [:30] [Intro to Charts][5-1E2] | [0:45] Lunch |
+[:05] Break | [:10] Break | [:05] Break | [:05] Break | [:05] Break | [1:30] [Project Presentations][6-1E] | 
 [1:00] [Defining Variables][1-1B] | [1:15] [Advanced Arguments][2-1C] | [1:00] [Lab #3: OOP][3-1C] | [:30] [Intro to Python for Data][5-1B] | [1:00] [Plots and Charts][5-1E] | [:30] [Wrap-up & Celebrations][6-1G] |
 [:10] [Lab #1: Fundamentals][1-1D] | [:10] Break | [:10] Break | [:05] Break | [:10] Break | -- |
 [:10] Break | [:20] [Lab #2: Control Flow][2-1D] | [:45] [Variable Scope][3-1D] | [1:30] [Pandas1][5-1C] ([Code][5-1C2]) | [1:00] [Pandas Datetime][5-1I] | -- | 
-[1:00] [Conditionals][1-1E] | [1:00] Lunch | [:15] Mid-Week Check-in | [1:00] Lunch | [1:00] Lunch | -- | 
-[1:00] Lunch | [:45] [Dictionaries][2-1E] | [1:00] Lunch | [:30] [Pandas 1 (cont'd)][5-1C] ([Code][5-1C2]) | [1:00] [Pandas Joins][5-1J]  | -- | 
+[1:00] [Conditionals][1-1E] | [0:45] Lunch | [:15] Mid-Week Check-in | [0:45] Lunch | [0:45] Lunch | -- | 
+[0:45] Lunch | [:45] [Dictionaries][2-1E] | [0:45] Lunch | [:30] [Pandas 1 (cont'd)][5-1C] ([Code][5-1C2]) | [1:00] [Pandas Joins][5-1J]  | -- | 
 [1:00] [Lists][1-1F] | [:05] Break | [:45] [Debugging Principles][3-1F] | [:05] Break | [:05] Break | -- |
 [:05] Break | [:45] [Sets & Tuples][2-1F] | [:05] Break | [1:30] [Pandas 2][5-1F] | [1:15] [Lab #6: Pandas][5-1G] | -- |
 [1:00] [Loops][1-1G] | [:05] Break | [1:00] [Lab #4: Debugging][3-1G] | [:10] Break | [:10] Break | -- |
